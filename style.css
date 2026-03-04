@@ -872,10 +872,18 @@ a, button, .btn, .cert-card, .hamburger, .back-to-top,
 }
 @media (max-width: 768px) {
   /* Reflow logos: from absolute side column → small bar above each card */
-  .timeline-logo {
-    position: static;
-    width: 100% !important;
+  .timeline-item,
+  .timeline-item:nth-child(odd),
+  .timeline-item:nth-child(even) {
     display: flex;
+    flex-direction: column;
+  }
+  .timeline-logo {
+    position: static !important;
+    width: 100% !important;
+    right: auto !important; left: auto !important;
+    top: auto !important; bottom: auto !important;
+    display: flex !important;
     justify-content: flex-start;
     align-items: center;
     pointer-events: auto;
@@ -885,7 +893,10 @@ a, button, .btn, .cert-card, .hamburger, .back-to-top,
     border: 1px solid var(--border);
     border-bottom: none;
     padding: 10px 14px;
+    order: 2;
   }
+  .timeline-dot { order: 1; }
+  .timeline-card { order: 3; }
   /* Widen rectangular logo boxes (Schneider, Meera, Renom) */
   .timeline-logo-box.logo-se,
   .timeline-logo-box.logo-ml,
@@ -1309,12 +1320,14 @@ a, button, .btn, .cert-card, .hamburger, .back-to-top,
   .nav-links {
     position: fixed; top: 0; right: 0; bottom: 0;
     width: 72vw; max-width: 280px;
+    height: 100vh; height: 100dvh;
     background: var(--bg-card);
     flex-direction: column; justify-content: center;
     padding: 40px 32px; gap: 28px;
     transform: translateX(100%); transition: transform 0.3s ease;
     border-left: 1px solid var(--border);
     z-index: 999; box-shadow: -8px 0 32px rgba(0,0,0,0.4);
+    overflow-y: auto;
   }
   .nav-links.open { transform: translateX(0); }
   .nav-link { font-size: 1.05rem; }
@@ -1423,11 +1436,19 @@ a, button, .btn, .cert-card, .hamburger, .back-to-top,
   #certLightboxFrame { height: 360px; }
   .cert-lightbox-body { min-height: 360px; }
 
-  /* MESSAGE POPUP — open downward on mobile so it never clips off-screen */
+  /* MESSAGE POPUP — open upward on mobile, high z-index, never clipped */
+  .msg-popup-wrap { position: static; display: flex; justify-content: center; }
+  .cta-card { overflow: visible; }
+  .contact-cta { overflow: visible; }
   .msg-options {
-    bottom: auto;
-    top: calc(100% + 10px);
-    transform: translateX(-50%) translateY(-10px);
+    position: fixed;
+    bottom: 80px;
+    left: 50%;
+    top: auto;
+    transform: translateX(-50%) translateY(10px);
+    z-index: 5000;
+    min-width: 220px;
+    box-shadow: 0 -8px 40px rgba(0,0,0,0.6);
   }
   .msg-popup-wrap.open .msg-options {
     transform: translateX(-50%) translateY(0);
