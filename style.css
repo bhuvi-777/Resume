@@ -1243,8 +1243,12 @@ a, button, .btn, .cert-card, .hamburger, .back-to-top,
   .skills-grid { grid-template-columns: 1fr; }
   .cert-cards-grid { grid-template-columns: repeat(2, 1fr); }
   .timeline::before { left: 24px; }
-  .timeline-item, .timeline-item:nth-child(even) { flex-direction: column; padding: 0 0 0 64px; }
-  .timeline-item:nth-child(odd) .timeline-dot, .timeline-item:nth-child(even) .timeline-dot { left: 0; right: auto; }
+  .timeline-item,
+  .timeline-item:nth-child(odd),
+  .timeline-item:nth-child(even) { flex-direction: column; padding: 0 0 0 64px; }
+  .timeline-item:nth-child(odd) .timeline-dot,
+  .timeline-item:nth-child(even) .timeline-dot { left: 0; right: auto; }
+  .timeline-card { width: 100%; box-sizing: border-box; }
   .achieve-grid { grid-template-columns: 1fr; }
   .projects-grid { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
@@ -1284,6 +1288,18 @@ a, button, .btn, .cert-card, .hamburger, .back-to-top,
   .hero-desc { font-size: 0.9rem; }
   .btn { padding: 12px 22px; font-size: 0.85rem; }
 
+  /* HERO PHOTO — restore profile card on mobile, centered */
+  .hero-visual { display: flex; justify-content: center; }
+  .profile-card { width: min(260px, 78vw); animation: none; }
+  .pc-photo-wrap { height: 220px; }
+
+  /* TAGS — prevent text breaking inside pill chips */
+  .timeline-tags span,
+  .project-stack span,
+  .skill-tags-mini span,
+  .pc-chip,
+  .timeline-badge-current { white-space: nowrap; }
+
   /* ABOUT */
   .about-highlights { grid-template-columns: 1fr; }
   .about-card { padding: 24px 20px; }
@@ -1315,7 +1331,9 @@ a, button, .btn, .cert-card, .hamburger, .back-to-top,
   .timeline { padding: 0 0 0 8px; }
   .timeline-card { padding: 18px 14px; }
   .timeline-company { font-size: 0.92rem; }
+  .timeline-role { flex-direction: column; align-items: flex-start; gap: 6px; }
   .timeline-desc { font-size: 0.82rem; }
+  .timeline-dot { width: 40px; height: 40px; font-size: 0.9rem; }
 
   /* PROJECTS */
   .project-card { padding: 22px 18px; }
