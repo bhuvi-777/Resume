@@ -870,7 +870,47 @@ a, button, .btn, .cert-card, .hamburger, .back-to-top,
   text-align: center; line-height: 1.3; padding: 0 8px;
   color: var(--text-muted);
 }
-@media (max-width: 768px) { .timeline-logo { display: none; } }
+@media (max-width: 768px) {
+  /* Reflow logos: from absolute side column → small bar above each card */
+  .timeline-logo {
+    position: static;
+    width: 100% !important;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    pointer-events: auto;
+    margin-bottom: 0;
+    border-radius: 12px 12px 0 0;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-bottom: none;
+    padding: 10px 14px;
+  }
+  /* Widen rectangular logo boxes (Schneider, Meera, Renom) */
+  .timeline-logo-box.logo-se,
+  .timeline-logo-box.logo-ml,
+  .timeline-logo-box.logo-renom {
+    width: 110px !important;
+    height: 44px !important;
+    border-radius: 8px;
+    box-shadow: none;
+    border: 1px solid var(--border);
+  }
+  /* Square / icon logo boxes */
+  .timeline-logo-box {
+    width: 48px !important;
+    height: 48px !important;
+    border-radius: 10px;
+    box-shadow: none;
+  }
+  /* Connect logo bar seamlessly to card below */
+  .timeline-logo + .timeline-card {
+    border-radius: 0 12px 12px 12px;
+    border-top: none;
+  }
+  .timeline-logo-icon i { font-size: 1.3rem; }
+  .timeline-logo-icon span { font-size: 0.55rem; }
+}
 
 /* =============================================
    PROJECTS
