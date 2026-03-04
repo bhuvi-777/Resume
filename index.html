@@ -844,7 +844,7 @@
     });
 
     // ---- CUSTOM CURSOR (desktop pointer devices only) ----
-    const isTouchDevice = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
+    const isTouchDevice = window.matchMedia('(hover: none) and (pointer: coarse)').matches;
     const dot = document.querySelector('.cursor-dot');
     const ring = document.querySelector('.cursor-ring');
     if (!isTouchDevice) {
