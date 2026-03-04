@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bhuvanesh Arun C T – Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- ========== CURSOR ========== -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- ========== PARTICLES ========== -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- ========== LOADER ========== -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <div class="loader-circuit"></div>
+      <div class="loader-text">Initializing<span class="loader-dots">...</span></div>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-bracket">&lt;</span>BA<span class="logo-bracket">/&gt;</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#hero" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="hero-grid-lines"></div>
+    <div class="hero-glow glow-1"></div>
+    <div class="hero-glow glow-2"></div>
+    <div class="hero-glow glow-3"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge reveal-up">
+        <span class="badge-dot"></span>
+        Available for Opportunities
+      </div>
+      <h1 class="hero-name reveal-up">
+        Bhuvanesh<br>
+        <span class="name-highlight">Arun C T</span>
+      </h1>
+      <div class="hero-typewriter reveal-up">
+        <span class="type-prefix">I am a </span>
+        <span class="typewriter" id="typewriter"></span>
+        <span class="cursor-blink">|</span>
+      </div>
+      <p class="hero-desc reveal-up">
+        Crafting the future through <span class="highlight-text">hardware design</span>,
+        <span class="highlight-text">embedded systems</span> &amp; <span class="highlight-text">IoT innovation</span>.
+        Turning ideas into circuits, one board at a time.
+      </p>
+
+      <div class="hero-actions reveal-up">
+        <a href="#projects" class="btn btn-primary">
+          <span>View Projects</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+        <a href="#contact" class="btn btn-ghost">
+          <span>Let's Connect</span>
+          <i class="fas fa-paper-plane"></i>
+        </a>
+      </div>
+
+      <div class="hero-stats reveal-up">
+        <div class="stat-item">
+          <div class="stat-number" data-target="8.63">0</div>
+          <div class="stat-label">CGPA</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="4">0</div>
+          <div class="stat-label">Projects</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="7">0</div>
+          <div class="stat-label">Certifications</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="5">0</div>
+          <div class="stat-label">Internships</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="profile-card reveal-right">
+        <span class="pc-corner pc-tl"></span>
+        <span class="pc-corner pc-tr"></span>
+        <span class="pc-corner pc-bl"></span>
+        <span class="pc-corner pc-br"></span>
+
+        <!-- Photo fills top of card -->
+        <div class="pc-photo-wrap">
+          <img src="My photo.png" alt="Bhuvanesh Arun C T" class="pc-photo" />
+          <div class="pc-photo-fade"></div>
+        </div>
+
+        <!-- Info section -->
+        <div class="pc-info">
+          <div class="pc-status">
+            <span class="pc-status-dot"></span>Open to Work
+          </div>
+          <div class="pc-divider"></div>
+          <div class="pc-chips">
+            <span class="pc-chip"><i class="fas fa-microchip"></i> ESP32 &amp; STM32</span>
+            <span class="pc-chip"><i class="fas fa-wifi"></i> IoT Systems</span>
+            <span class="pc-chip"><i class="fas fa-microchip"></i> PCB Design</span>
+            <span class="pc-chip"><i class="fas fa-robot"></i> Robotics</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll to explore</span>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="section" id="about">
+    <div class="section-container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">01. About</span>
+        <h2 class="section-title">Who Am I?</h2>
+        <div class="title-underline"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card reveal-left">
+          <div class="about-avatar-wrap">
+            <div class="about-avatar">
+              <i class="fas fa-user avatar-icon"></i>
+            </div>
+            <div class="avatar-ring ring-1"></div>
+            <div class="avatar-ring ring-2"></div>
+            <div class="avatar-ring ring-3"></div>
+          </div>
+          <div class="edu-block">
+            <div class="edu-icon">
+              <img src="logo/CIT LOGO - HIGH RESOLUTION copy-1.png" alt="CIT" class="edu-college-logo" />
+            </div>
+            <div class="edu-info">
+              <div class="edu-degree">B.E – Electrical &amp; Electronics Engineering</div>
+              <div class="edu-school">Chennai Institute of Technology</div>
+              <div class="edu-meta">
+                <span class="edu-year"><i class="fas fa-calendar"></i> 2023 – 2027</span>
+                <span class="edu-cgpa"><i class="fas fa-star"></i> 8.63 CGPA</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-current-role">
+            <div class="about-current-body">
+              <img src="logo/Schneider Electric_Logo_0.png" alt="Schneider Electric" class="about-se-logo" />
+              <div class="about-current-info">
+                <div class="about-current-company">Schneider Electric <span class="about-current-dot-pill"><span class="about-current-dot"></span>Now</span></div>
+                <div class="about-current-role-name">Production Department Intern</div>
+                <div class="about-current-meta"><i class="fas fa-map-marker-alt"></i> Attibele, Bengaluru</div>
+                <div class="about-current-meta"><i class="fas fa-calendar-alt"></i> Dec 2025 – Present</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-text reveal-right">
+          <p class="about-intro">
+            I'm a <strong>Hardware Design Engineer</strong> and <strong>Embedded IoT Enthusiast</strong>
+            currently pursuing my B.E at Chennai Institute of Technology. I blend electronics engineering
+            with modern IoT to create intelligent, connected systems. Currently interning at
+            <strong>Schneider Electric</strong> in the Production Department, developing internal tools
+            to improve operational efficiency.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <div class="highlight-icon"><i class="fas fa-microchip"></i></div>
+              <div><strong>PCB Design Expert</strong><br><small>Altium, KiCad, Gerber workflows</small></div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon"><i class="fas fa-wifi"></i></div>
+              <div><strong>IoT Developer</strong><br><small>ESP32, sensor fusion, dashboards</small></div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon"><i class="fas fa-robot"></i></div>
+              <div><strong>Robotics Enthusiast</strong><br><small>KUKA arms, RoboDK, automation</small></div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon"><i class="fas fa-flask"></i></div>
+              <div><strong>Researcher</strong><br><small>EV grid integration, power quality</small></div>
+            </div>
+          </div>
+
+          <div class="research-spotlight">
+            <div class="research-label"><i class="fas fa-book-open"></i> Research Publication</div>
+            <p>"A comprehensive review of power quality challenges arising from high-penetration electric vehicle integration and strategies for resilient grid adaptation"</p>
+            <span class="journal-badge">Energy Exploration &amp; Exploitation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section class="section section-dark" id="skills">
+    <div class="section-container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">02. Skills</span>
+        <h2 class="section-title">Technical Arsenal</h2>
+        <div class="title-underline"></div>
+      </div>
+
+      <div class="skills-grid">
+
+        <div class="skill-card reveal-up" style="--delay:0.1s">
+          <div class="skill-card-icon"><i class="fas fa-circuit-board"></i></div>
+          <h3>Hardware &amp; PCB</h3>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>Altium Designer</span><span class="skill-pct level-advanced">Advanced</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>KiCad</span><span class="skill-pct level-expert">Expert</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>PCB Routing</span><span class="skill-pct level-advanced">Advanced</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="88"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>LTspice</span><span class="skill-pct level-proficient">Proficient</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="75"></div></div>
+            </div>
+          </div>
+          <div class="skill-tags-mini">
+            <span>Gerber</span><span>PCB Assembly</span><span>Fritzing</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal-up" style="--delay:0.2s">
+          <div class="skill-card-icon"><i class="fas fa-wifi"></i></div>
+          <h3>Embedded &amp; IoT</h3>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>ESP32</span><span class="skill-pct level-expert">Expert</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="92"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>Arduino</span><span class="skill-pct level-expert">Expert</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>Sensor Integration</span><span class="skill-pct level-advanced">Advanced</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="88"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>REST/HTTP Dashboards</span><span class="skill-pct level-proficient">Proficient</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
+            </div>
+          </div>
+          <div class="skill-tags-mini">
+            <span>UART</span><span>I2C</span><span>SPI</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal-up" style="--delay:0.3s">
+          <div class="skill-card-icon"><i class="fas fa-code"></i></div>
+          <h3>Programming</h3>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>C Language</span><span class="skill-pct level-proficient">Proficient</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="75"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>MATLAB/Simulink</span><span class="skill-pct level-proficient">Proficient</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="70"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>HTML/CSS/JS</span><span class="skill-pct level-intermediate">Intermediate</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="65"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>C++ / Java</span><span class="skill-pct level-beginner">Beginner</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="50"></div></div>
+            </div>
+          </div>
+          <div class="skill-tags-mini">
+            <span>Git</span><span>GitHub</span><span>Linux</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal-up" style="--delay:0.4s">
+          <div class="skill-card-icon"><i class="fas fa-robot"></i></div>
+          <h3>Automation &amp; Robotics</h3>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>RoboDK</span><span class="skill-pct level-proficient">Proficient</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>KUKA KR 16</span><span class="skill-pct level-proficient">Proficient</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="78"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>KUKA LBR issy</span><span class="skill-pct level-proficient">Proficient</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="75"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>Fusion 360</span><span class="skill-pct level-intermediate">Intermediate</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="70"></div></div>
+            </div>
+          </div>
+          <div class="skill-tags-mini">
+            <span>Industrial Arms</span><span>CoE</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Certifications -->
+      <div class="certs-section reveal-up">
+        <div class="certs-header">
+          <h3 class="certs-heading"><i class="fas fa-id-badge"></i> Certifications &amp; Credentials</h3>
+          <div class="certs-count"><span>14</span> Verified</div>
+        </div>
+        <div class="cert-cards-grid">
+
+          <!-- Universal Robots – 5 sub-certs -->
+          <div class="cert-card cert-card-multi" style="--cert-color:#00f5c4"
+               data-cert-name="Universal Robots"
+               data-cert-subs='[{"name":"CB3 e-Series Learning","file":"cert-images/Universal Robots/CB3 e-learning.pdf"},{"name":"e-Series Application Track","file":"cert-images/Universal Robots/e-series application track.pdf"},{"name":"e-Series Core Track","file":"cert-images/Universal Robots/e-series core track.pdf"},{"name":"e-Series Pro Track","file":"cert-images/Universal Robots/e-series pro track.pdf"},{"name":"Risk Assessment","file":"cert-images/Universal Robots/Risk Assesment.pdf"}]'>
+            <div class="cert-card-icon" style="--cert-color:#00f5c4"><i class="fas fa-robot"></i></div>
+            <div class="cert-card-body">
+              <div class="cert-card-title">Universal Robots</div>
+              <div class="cert-card-org">Universal Robots Academy</div>
+            </div>
+            <div class="cert-multi-badge">5 Certs</div>
+            <div class="cert-view-hint"><i class="fas fa-layer-group"></i></div>
+          </div>
+
+          <!-- CCNA -->
+          <div class="cert-card" style="--cert-color:#4f8ef7"
+               data-cert-img="cert-images/CCNA-_Introduction_to_Networks_certificate.pdf"
+               data-cert-name="CCNA – Introduction to Networks">
+            <div class="cert-card-icon" style="--cert-color:#4f8ef7"><i class="fas fa-network-wired"></i></div>
+            <div class="cert-card-body">
+              <div class="cert-card-title">CCNA – Introduction to Networks</div>
+              <div class="cert-card-org">Cisco</div>
+            </div>
+            <div class="cert-verified"><i class="fas fa-check"></i></div>
+            <div class="cert-view-hint"><i class="fas fa-eye"></i></div>
+          </div>
+
+          <!-- Cybersecurity Essentials -->
+          <div class="cert-card" style="--cert-color:#4f8ef7"
+               data-cert-img="cert-images/Cybersecurity essentials.pdf"
+               data-cert-name="Cybersecurity Essentials">
+            <div class="cert-card-icon" style="--cert-color:#4f8ef7"><i class="fas fa-shield-alt"></i></div>
+            <div class="cert-card-body">
+              <div class="cert-card-title">Cybersecurity Essentials</div>
+              <div class="cert-card-org">Cisco</div>
+            </div>
+            <div class="cert-verified"><i class="fas fa-check"></i></div>
+            <div class="cert-view-hint"><i class="fas fa-eye"></i></div>
+          </div>
+
+          <!-- Intro to Cybersecurity -->
+          <div class="cert-card" style="--cert-color:#60a5fa"
+               data-cert-img="cert-images/Introduction to cybersecurity.pdf"
+               data-cert-name="Introduction to Cybersecurity">
+            <div class="cert-card-icon" style="--cert-color:#60a5fa"><i class="fas fa-lock"></i></div>
+            <div class="cert-card-body">
+              <div class="cert-card-title">Introduction to Cybersecurity</div>
+              <div class="cert-card-org">Cisco</div>
+            </div>
+            <div class="cert-verified"><i class="fas fa-check"></i></div>
+            <div class="cert-view-hint"><i class="fas fa-eye"></i></div>
+          </div>
+
+          <!-- Digital Circuits -->
+          <div class="cert-card" style="--cert-color:#fb923c"
+               data-cert-img="cert-images/Digital Circuits.pdf"
+               data-cert-name="Digital Circuits">
+            <div class="cert-card-icon" style="--cert-color:#fb923c"><i class="fas fa-microchip"></i></div>
+            <div class="cert-card-body">
+              <div class="cert-card-title">Digital Circuits</div>
+              <div class="cert-card-org">NPTEL</div>
+            </div>
+            <div class="cert-verified"><i class="fas fa-check"></i></div>
+            <div class="cert-view-hint"><i class="fas fa-eye"></i></div>
+          </div>
+
+          <!-- IoT -->
+          <div class="cert-card" style="--cert-color:#00f5c4"
+               data-cert-img="cert-images/Introduction To Internet Of Things.pdf"
+               data-cert-name="Introduction to Internet of Things">
+            <div class="cert-card-icon" style="--cert-color:#00f5c4"><i class="fas fa-wifi"></i></div>
+            <div class="cert-card-body">
+              <div class="cert-card-title">Introduction to Internet of Things</div>
+              <div class="cert-card-org">NPTEL</div>
+            </div>
+            <div class="cert-verified"><i class="fas fa-check"></i></div>
+            <div class="cert-view-hint"><i class="fas fa-eye"></i></div>
+          </div>
+
+          <!-- PCB Design -->
+          <div class="cert-card" style="--cert-color:#c084fc"
+               data-cert-img="cert-images/Electronic Systems Design_ Hands-on Circuits and PCB Design with CAD Software.pdf"
+               data-cert-name="Electronic Systems &amp; PCB Design with CAD">
+            <div class="cert-card-icon" style="--cert-color:#c084fc"><i class="fas fa-microchip"></i></div>
+            <div class="cert-card-body">
+              <div class="cert-card-title">Electronic Systems &amp; PCB Design with CAD</div>
+              <div class="cert-card-org">CAD / PCB Training</div>
+            </div>
+            <div class="cert-verified"><i class="fas fa-check"></i></div>
+            <div class="cert-view-hint"><i class="fas fa-eye"></i></div>
+          </div>
+
+          <!-- Simulink -->
+          <div class="cert-card" style="--cert-color:#f5c518"
+               data-cert-img="cert-images/Simulink onramp.pdf"
+               data-cert-name="Simulink Onramp">
+            <div class="cert-card-icon" style="--cert-color:#f5c518"><i class="fas fa-chart-line"></i></div>
+            <div class="cert-card-body">
+              <div class="cert-card-title">Simulink Onramp</div>
+              <div class="cert-card-org">MathWorks</div>
+            </div>
+            <div class="cert-verified"><i class="fas fa-check"></i></div>
+            <div class="cert-view-hint"><i class="fas fa-eye"></i></div>
+          </div>
+
+          <!-- Stateflow -->
+          <div class="cert-card" style="--cert-color:#fbbf24"
+               data-cert-img="cert-images/Stateflow onramp.pdf"
+               data-cert-name="Stateflow Onramp">
+            <div class="cert-card-icon" style="--cert-color:#fbbf24"><i class="fas fa-sitemap"></i></div>
+            <div class="cert-card-body">
+              <div class="cert-card-title">Stateflow Onramp</div>
+              <div class="cert-card-org">MathWorks</div>
+            </div>
+            <div class="cert-verified"><i class="fas fa-check"></i></div>
+            <div class="cert-view-hint"><i class="fas fa-eye"></i></div>
+          </div>
+
+          <!-- AICTE -->
+          <div class="cert-card" style="--cert-color:#4f8ef7"
+               data-cert-img="cert-images/AICTE internship.pdf"
+               data-cert-name="AICTE Embedded System Developer Internship">
+            <div class="cert-card-icon" style="--cert-color:#4f8ef7"><i class="fas fa-code"></i></div>
+            <div class="cert-card-body">
+              <div class="cert-card-title">Embedded System Developer</div>
+              <div class="cert-card-org">AICTE Virtual Internship</div>
+            </div>
+            <div class="cert-verified"><i class="fas fa-check"></i></div>
+            <div class="cert-view-hint"><i class="fas fa-eye"></i></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EXPERIENCE ========== -->
+  <section class="section" id="experience">
+    <div class="section-container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">03. Experience</span>
+        <h2 class="section-title">Where I've Worked</h2>
+        <div class="title-underline"></div>
+      </div>
+
+      <div class="timeline">
+
+        <div class="timeline-item reveal-left">
+          <div class="timeline-dot"><i class="fas fa-industry"></i></div>
+          <div class="timeline-logo">
+            <div class="timeline-logo-box logo-se" style="border-color:rgba(61,205,88,0.25);">
+              <img src="logo/Schneider Electric_Logo_0.png" alt="Schneider Electric" />
+            </div>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div class="timeline-company">Schneider Electric</div>
+              <div class="timeline-role">Production Department Intern <span class="timeline-badge-current">Current</span></div>
+              <div class="timeline-meta">
+                <span><i class="fas fa-calendar-alt"></i> Dec 2025 – Present</span>
+                <span><i class="fas fa-map-marker-alt"></i> Attibele, Bengaluru, KA</span>
+              </div>
+            </div>
+            <p class="timeline-desc">Working as an intern in the Production Department, developing multiple internal tools to streamline operations, improve efficiency, and resolve department-level challenges in a global energy management environment.</p>
+            <div class="timeline-tags"><span>Production Operations</span><span>Tool Development</span><span>Process Optimization</span><span>Schneider Electric</span></div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-right">
+          <div class="timeline-dot"><i class="fas fa-microchip"></i></div>
+          <div class="timeline-logo">
+            <div class="timeline-logo-box logo-photo">
+              <img src="logo/pic_a_board_logo.jfif" alt="PICABORD Technologies" />
+            </div>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div class="timeline-company">PICABORD Technologies Pvt. Ltd.</div>
+              <div class="timeline-role">Hardware Design Engineer</div>
+              <div class="timeline-meta">
+                <span><i class="fas fa-calendar-alt"></i> Apr 2025 – Dec 2025</span>
+                <span><i class="fas fa-map-marker-alt"></i> Chennai, TN</span>
+              </div>
+            </div>
+            <p class="timeline-desc">Created the basic layout of a single board computer including schematic development and PCB design. Gained hands-on experience in hardware integration, component selection, and system-level embedded design.</p>
+            <div class="timeline-tags"><span>PCB Design</span><span>Schematic</span><span>Single Board Computer</span></div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-right">
+          <div class="timeline-dot"><i class="fas fa-robot"></i></div>
+          <div class="timeline-logo">
+            <div class="timeline-logo-box logo-ml" style="border-color:rgba(239,68,68,0.25);">
+              <img src="logo/meera laser.png" alt="Meera Laser Solutions" />
+            </div>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div class="timeline-company">Meera Laser Solutions Pvt. Ltd.</div>
+              <div class="timeline-role">Project Engineer Intern</div>
+              <div class="timeline-meta">
+                <span><i class="fas fa-calendar-alt"></i> Aug 2025 – Sep 2025</span>
+                <span><i class="fas fa-map-marker-alt"></i> Chennai, TN</span>
+              </div>
+            </div>
+            <p class="timeline-desc">Worked on the setup of a laser welding head on a KUKA robotic arm, coordinating with partner companies and managing resource arrangement, equipment arrival, and vendor alignment.</p>
+            <div class="timeline-tags"><span>KUKA Robotics</span><span>Laser Welding</span><span>Project Coordination</span></div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-left">
+          <div class="timeline-dot"><i class="fas fa-wind"></i></div>
+          <div class="timeline-logo">
+            <div class="timeline-logo-box logo-renom">
+              <img src="logo/renom energy services.jfif" alt="Renom Wind Energy Services" />
+            </div>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div class="timeline-company">Renom Wind Energy Services Pvt. Ltd.</div>
+              <div class="timeline-role">Engineering Trainee</div>
+              <div class="timeline-meta">
+                <span><i class="fas fa-calendar-alt"></i> Nov 2024 – Dec 2024</span>
+                <span><i class="fas fa-map-marker-alt"></i> Tirunelveli, TN</span>
+              </div>
+            </div>
+            <p class="timeline-desc">Completed a 6-week internship on wind turbine operation and maintenance with Enercon E40 models. Assisted in inspections and troubleshooting, enhancing knowledge of electricity generation and renewable energy systems.</p>
+            <div class="timeline-tags"><span>Wind Turbines</span><span>Enercon E40</span><span>Renewable Energy</span></div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-right">
+          <div class="timeline-dot"><i class="fas fa-bolt"></i></div>
+          <div class="timeline-logo">
+            <div class="timeline-logo-box" style="border-color:rgba(251,191,36,0.3);">
+              <div class="timeline-logo-icon">
+                <i class="fas fa-wind" style="color:#fbbf24;"></i>
+                <span style="color:#fbbf24;">Vels Wind<br>Power</span>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div class="timeline-company">Vels Wind Power</div>
+              <div class="timeline-role">Lab Engineer Intern</div>
+              <div class="timeline-meta">
+                <span><i class="fas fa-calendar-alt"></i> May 2024 – Jun 2024</span>
+                <span><i class="fas fa-map-marker-alt"></i> Kanyakumari, TN</span>
+              </div>
+            </div>
+            <p class="timeline-desc">Completed a 45-day internship as a lab technician engineer. Assembled and tested a 12V battery charger circuit PCB while developing skills in circuit troubleshooting, error detection, and rectification.</p>
+            <div class="timeline-tags"><span>PCB Assembly</span><span>Circuit Testing</span><span>Troubleshooting</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section class="section section-dark" id="projects">
+    <div class="section-container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">04. Projects</span>
+        <h2 class="section-title">What I've Built</h2>
+        <div class="title-underline"></div>
+      </div>
+
+      <div class="projects-grid">
+
+        <div class="project-card reveal-up" style="--delay:0.1s">
+          <div class="project-card-glow"></div>
+          <div class="project-num">01</div>
+          <div class="project-icon"><i class="fas fa-circuit-board"></i></div>
+          <h3 class="project-title">Custom Arduino Nano PCB</h3>
+          <p class="project-desc">Designed a custom Arduino Nano-compatible PCB using KiCad, covering schematic design, optimized PCB routing, 3D visualization, and Gerber file generation for seamless manufacturing.</p>
+          <div class="project-stack"><span>KiCad</span><span>Gerber</span><span>PCB Design</span><span>3D Visualization</span></div>
+        </div>
+
+        <div class="project-card reveal-up" style="--delay:0.2s">
+          <div class="project-card-glow"></div>
+          <div class="project-num">02</div>
+          <div class="project-icon"><i class="fas fa-thermometer-half"></i></div>
+          <h3 class="project-title">Smart Overheating Protection System</h3>
+          <p class="project-desc">Advanced IoT system using ESP32 and DS18B20 sensors for real-time temperature monitoring with automatic power disconnection, remote web dashboard, and alert notifications.</p>
+          <div class="project-stack"><span>ESP32</span><span>DS18B20</span><span>SSR/Relay</span><span>Web Dashboard</span></div>
+        </div>
+
+        <div class="project-card reveal-up" style="--delay:0.3s">
+          <div class="project-card-glow"></div>
+          <div class="project-num">03</div>
+          <div class="project-icon"><i class="fas fa-water"></i></div>
+          <h3 class="project-title">Smart Water Tank IoT Monitor</h3>
+          <p class="project-desc">Intelligent IoT system integrating ultrasonic, TDS, and turbidity sensors for real-time water level and quality monitoring with web interface, LCD fallback, and smart automation.</p>
+          <div class="project-stack"><span>ESP32</span><span>HC-SR04</span><span>TDS Sensor</span><span>LCD</span><span>IoT</span></div>
+        </div>
+
+        <div class="project-card reveal-up featured-project" style="--delay:0.4s">
+          <div class="project-card-glow"></div>
+          <div class="project-featured-badge"><i class="fas fa-star"></i> Featured – SIH</div>
+          <div class="project-num">04</div>
+          <div class="project-icon"><i class="fas fa-seedling"></i></div>
+          <h3 class="project-title">IoT Nutrient Analysis Kit for Organic Manure</h3>
+          <p class="project-desc">Low-cost IoT system to quantify NPK nutrient levels in Fermented/Liquid Organic Manure using TCS3200 color sensor and ESP32 with reagent-based colorimetry for <strong>Smart India Hackathon</strong>.</p>
+          <div class="project-stack"><span>ESP32</span><span>TCS3200</span><span>Colorimetry</span><span>NPK Analysis</span><span>SIH</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ACHIEVEMENTS ========== -->
+  <section class="section" id="achievements">
+    <div class="section-container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">05. Wins</span>
+        <h2 class="section-title">Achievements &amp; Activities</h2>
+        <div class="title-underline"></div>
+      </div>
+
+      <div class="achieve-grid">
+        <div class="achieve-card gold-card reveal-up" style="--delay:0.1s">
+          <div class="achieve-trophy">🏆</div>
+          <div class="achieve-rank gold-rank">Winner</div>
+          <h3>Roborace</h3>
+          <p>Takshashila 2025, Chennai Institute of Technology</p>
+        </div>
+        <div class="achieve-card silver-card reveal-up" style="--delay:0.2s">
+          <div class="achieve-trophy">🥈</div>
+          <div class="achieve-rank silver-rank">Finalist</div>
+          <h3>Nexathon 2024</h3>
+          <p>Chennai Institute of Technology</p>
+        </div>
+        <div class="achieve-card silver-card reveal-up" style="--delay:0.3s">
+          <div class="achieve-trophy">🏅</div>
+          <div class="achieve-rank silver-rank">Finalist</div>
+          <h3>Autorace – RC Racing</h3>
+          <p>Kurukshektra 2025, CEG, Guindy</p>
+        </div>
+      </div>
+
+      <div class="extra-cards reveal-up">
+        <div class="extra-card">
+          <div class="extra-icon"><i class="fas fa-cogs"></i></div>
+          <div class="extra-text">
+            <strong>KUKA Centre of Excellence</strong>
+            <p>Hands-on experience with KUKA KR 16 and KUKA LBR issy 11 industrial robots.</p>
+          </div>
+        </div>
+        <div class="extra-card">
+          <div class="extra-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+          <div class="extra-text">
+            <strong>Workshop Organizer</strong>
+            <p>Organized "Automation &amp; Robotics Workshop" by KUKA Training Centre at Innovest 2024.</p>
+          </div>
+        </div>
+        <div class="extra-card">
+          <div class="extra-icon"><i class="fas fa-users"></i></div>
+          <div class="extra-text">
+            <strong>Joint Secretary</strong>
+            <p>Organized "Impulse 2025 (Symposium)" as Joint-Secretary of the department.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="section section-dark" id="contact">
+    <div class="section-container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">06. Contact</span>
+        <h2 class="section-title">Let's Build Something</h2>
+        <div class="title-underline"></div>
+        <p class="section-subtitle">Have a project in mind? Want to collaborate? I'd love to hear from you.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <a href="tel:+918838371488" class="contact-item">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div class="contact-detail">
+              <span class="contact-label">Phone</span>
+              <span class="contact-value">+91 88383 71488</span>
+            </div>
+          </a>
+          <a href="mailto:bhuvanesharun777@gmail.com" class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div class="contact-detail">
+              <span class="contact-label">Email</span>
+              <span class="contact-value">bhuvanesharun777@gmail.com</span>
+            </div>
+          </a>
+          <a href="http://www.linkedin.com/in/bhuvanesharunct" target="_blank" class="contact-item">
+            <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+            <div class="contact-detail">
+              <span class="contact-label">LinkedIn</span>
+              <span class="contact-value">bhuvanesharunct</span>
+            </div>
+          </a>
+          <a href="https://github.com/bhuvi-777" target="_blank" class="contact-item">
+            <div class="contact-icon"><i class="fab fa-github"></i></div>
+            <div class="contact-detail">
+              <span class="contact-label">GitHub</span>
+              <span class="contact-value">bhuvi-777</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="contact-cta reveal-right">
+          <div class="cta-card">
+            <div class="cta-glow"></div>
+            <div class="cta-icon"><i class="fas fa-paper-plane"></i></div>
+            <h3>Ready to connect?</h3>
+            <p>Whether it's a hardware project, IoT system, or just a chat about tech — reach out anytime.</p>
+            <div class="msg-popup-wrap">
+              <button class="btn btn-primary msg-trigger" id="msgTrigger">
+                <span>Send a Message</span>
+                <i class="fas fa-chevron-up msg-chevron"></i>
+              </button>
+              <div class="msg-options" id="msgOptions">
+                <a href="https://wa.me/918838371488" target="_blank" rel="noopener" class="msg-option msg-wa">
+                  <i class="fab fa-whatsapp"></i>
+                  <span>WhatsApp</span>
+                  <i class="fas fa-arrow-right msg-opt-arrow"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/bhuvanesharunct" target="_blank" rel="noopener" class="msg-option msg-li">
+                  <i class="fab fa-linkedin-in"></i>
+                  <span>LinkedIn</span>
+                  <i class="fas fa-arrow-right msg-opt-arrow"></i>
+                </a>
+                <a href="mailto:bhuvanesharun777@gmail.com" class="msg-option msg-mail">
+                  <i class="fas fa-envelope"></i>
+                  <span>Email</span>
+                  <i class="fas fa-arrow-right msg-opt-arrow"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-bracket">&lt;</span>BA<span class="logo-bracket">/&gt;</span>
+      </div>
+      <p class="footer-copy">© 2026 Bhuvanesh Arun C T &nbsp;·&nbsp; Crafted with <i class="fas fa-heart" style="color:#f56565"></i> &amp; circuits</p>
+      <div class="footer-links">
+        <a href="http://www.linkedin.com/in/bhuvanesharunct" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/bhuvi-777" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="mailto:bhuvanesharun777@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== BACK TO TOP ========== -->
+  <button class="back-to-top" id="backToTop"><i class="fas fa-chevron-up"></i></button>
+
+  <!-- ========== CERT LIGHTBOX ========== -->
+  <div class="cert-lightbox" id="certLightbox">
+    <div class="cert-lightbox-overlay" id="certOverlay"></div>
+    <div class="cert-lightbox-modal">
+      <div class="cert-lightbox-header">
+        <div class="cert-lightbox-title" id="certLightboxTitle"></div>
+        <div class="cert-lightbox-actions">
+          <button class="cert-back-btn" id="certBackBtn"><i class="fas fa-arrow-left"></i> Back</button>
+          <button class="cert-lightbox-close" id="certLightboxClose"><i class="fas fa-times"></i></button>
+        </div>
+      </div>
+      <div class="cert-sub-picker" id="certSubPicker">
+        <p>Select a certificate to view:</p>
+        <div class="cert-sub-list" id="certSubList"></div>
+      </div>
+      <div class="cert-lightbox-body" id="certLightboxBody">
+        <iframe id="certLightboxFrame" src="" title="Certificate"></iframe>
+        <div class="cert-lightbox-placeholder" id="certLightboxPlaceholder">
+          <i class="fas fa-file-pdf"></i>
+          <p>Certificate file not found.</p>
+          <small>Place your PDF in the <code>cert-images/</code> folder.</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // ---- LOADER ----
+    window.addEventListener('load', () => {
+      setTimeout(() => { document.getElementById('loader').classList.add('hidden'); }, 1600);
+    });
+
+    // ---- CUSTOM CURSOR (desktop pointer devices only) ----
+    const isTouchDevice = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
+    const dot = document.querySelector('.cursor-dot');
+    const ring = document.querySelector('.cursor-ring');
+    if (!isTouchDevice) {
+      let mouseX = 0, mouseY = 0, ringX = 0, ringY = 0;
+      document.addEventListener('mousemove', e => {
+        mouseX = e.clientX; mouseY = e.clientY;
+        dot.style.left = mouseX + 'px';
+        dot.style.top = mouseY + 'px';
+      });
+      function animateRing() {
+        ringX += (mouseX - ringX) * 0.12;
+        ringY += (mouseY - ringY) * 0.12;
+        ring.style.left = ringX + 'px';
+        ring.style.top = ringY + 'px';
+        requestAnimationFrame(animateRing);
+      }
+      animateRing();
+      document.querySelectorAll('a, button, .skill-card, .project-card').forEach(el => {
+        el.addEventListener('mouseenter', () => { ring.classList.add('ring-hover'); dot.classList.add('dot-hover'); });
+        el.addEventListener('mouseleave', () => { ring.classList.remove('ring-hover'); dot.classList.remove('dot-hover'); });
+      });
+    }
+
+    // ---- PARTICLES ----
+    const canvas = document.getElementById('particles-canvas');
+    const ctx = canvas.getContext('2d');
+    let particles = [];
+    function resizeCanvas() { canvas.width = window.innerWidth; canvas.height = window.innerHeight; }
+    resizeCanvas();
+    window.addEventListener('resize', resizeCanvas);
+    class Particle {
+      constructor() { this.reset(); }
+      reset() {
+        this.x = Math.random() * canvas.width;
+        this.y = Math.random() * canvas.height;
+        this.size = Math.random() * 1.5 + 0.5;
+        this.speedX = (Math.random() - 0.5) * 0.4;
+        this.speedY = (Math.random() - 0.5) * 0.4;
+        this.opacity = Math.random() * 0.4 + 0.1;
+        this.color = Math.random() > 0.5 ? '#00f5c4' : '#4f8ef7';
+      }
+      update() {
+        this.x += this.speedX; this.y += this.speedY;
+        if (this.x < 0 || this.x > canvas.width || this.y < 0 || this.y > canvas.height) this.reset();
+      }
+      draw() {
+        ctx.beginPath(); ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.fillStyle = this.color; ctx.globalAlpha = this.opacity; ctx.fill(); ctx.globalAlpha = 1;
+      }
+    }
+    const particleCount = window.innerWidth < 768 ? 25 : 80;
+    for (let i = 0; i < particleCount; i++) particles.push(new Particle());
+    function connectParticles() {
+      for (let i = 0; i < particles.length; i++) {
+        for (let j = i + 1; j < particles.length; j++) {
+          const dx = particles[i].x - particles[j].x, dy = particles[i].y - particles[j].y;
+          const dist = Math.sqrt(dx*dx + dy*dy);
+          if (dist < 100) {
+            ctx.beginPath(); ctx.strokeStyle = '#00f5c4';
+            ctx.globalAlpha = (1 - dist / 100) * 0.08; ctx.lineWidth = 0.5;
+            ctx.moveTo(particles[i].x, particles[i].y); ctx.lineTo(particles[j].x, particles[j].y);
+            ctx.stroke(); ctx.globalAlpha = 1;
+          }
+        }
+      }
+    }
+    function animateParticles() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      particles.forEach(p => { p.update(); p.draw(); });
+      connectParticles();
+      requestAnimationFrame(animateParticles);
+    }
+    animateParticles();
+
+    // ---- NAVBAR ----
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 60);
+      document.getElementById('backToTop').classList.toggle('visible', window.scrollY > 400);
+    });
+
+    // ---- HAMBURGER ----
+    const hamburger = document.getElementById('hamburger');
+    const navLinks  = document.querySelector('.nav-links');
+    const navOverlay = document.getElementById('navOverlay');
+    function closeNav() {
+      hamburger.classList.remove('open');
+      navLinks.classList.remove('open');
+      navOverlay.classList.remove('show');
+    }
+    hamburger.addEventListener('click', function() {
+      this.classList.toggle('open');
+      navLinks.classList.toggle('open');
+      navOverlay.classList.toggle('show');
+    });
+    navOverlay.addEventListener('click', closeNav);
+    navLinks.querySelectorAll('.nav-link').forEach(l => l.addEventListener('click', closeNav));
+
+    // ---- ACTIVE NAV ----
+    const sections = document.querySelectorAll('section[id]');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(s => { if (window.scrollY >= s.offsetTop - 120) current = s.id; });
+      document.querySelectorAll('.nav-link').forEach(l => {
+        l.classList.toggle('active', l.getAttribute('href') === '#' + current);
+      });
+    });
+
+    // ---- TYPEWRITER ----
+    const words = ['Hardware Designer', 'PCB Engineer', 'IoT Developer', 'Embedded Systems Engineer', 'Robotics Enthusiast'];
+    let wi = 0, ci = 0, deleting = false;
+    const tw = document.getElementById('typewriter');
+    function type() {
+      const word = words[wi];
+      if (!deleting) {
+        tw.textContent = word.slice(0, ++ci);
+        if (ci === word.length) { deleting = true; setTimeout(type, 1800); return; }
+      } else {
+        tw.textContent = word.slice(0, --ci);
+        if (ci === 0) { deleting = false; wi = (wi + 1) % words.length; }
+      }
+      setTimeout(type, deleting ? 55 : 85);
+    }
+    type();
+
+    // ---- COUNTER ANIMATION ----
+    function animateCounter(el) {
+      const target = parseFloat(el.dataset.target);
+      const isFloat = target % 1 !== 0;
+      const duration = 1800; const start = performance.now();
+      function update(now) {
+        const progress = Math.min((now - start) / duration, 1);
+        const ease = 1 - Math.pow(1 - progress, 3);
+        const val = target * ease;
+        el.textContent = isFloat ? val.toFixed(2) : Math.floor(val);
+        if (progress < 1) requestAnimationFrame(update);
+        else el.textContent = isFloat ? target.toFixed(2) : target;
+      }
+      requestAnimationFrame(update);
+    }
+
+    // ---- INTERSECTION OBSERVER ----
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const delay = el.style.getPropertyValue('--delay') || '0s';
+          setTimeout(() => { el.classList.add('revealed'); }, parseFloat(delay) * 1000);
+          revealObserver.unobserve(el);
+        }
+      });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.reveal-up, .reveal-left, .reveal-right').forEach(el => revealObserver.observe(el));
+
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.querySelectorAll('.stat-number').forEach(animateCounter);
+          counterObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+    document.querySelectorAll('.hero-stats').forEach(el => counterObserver.observe(el));
+
+    const barObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.querySelectorAll('.skill-bar-fill').forEach(bar => { bar.style.width = bar.dataset.width + '%'; });
+          barObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.3 });
+    document.querySelectorAll('.skill-card').forEach(el => barObserver.observe(el));
+
+    // ---- BACK TO TOP ----
+    document.getElementById('backToTop').addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    // ---- CERT LIGHTBOX ----
+    const lightbox    = document.getElementById('certLightbox');
+    const lbFrame     = document.getElementById('certLightboxFrame');
+    const lbTitle     = document.getElementById('certLightboxTitle');
+    const lbPH        = document.getElementById('certLightboxPlaceholder');
+    const lbBody      = document.getElementById('certLightboxBody');
+    const lbSubPicker = document.getElementById('certSubPicker');
+    const lbSubList   = document.getElementById('certSubList');
+    const lbBackBtn   = document.getElementById('certBackBtn');
+
+    function loadPDF(fileSrc) {
+      lbSubPicker.classList.remove('show');
+      lbPH.classList.remove('show');
+      lbBody.style.display = 'flex';
+      lbFrame.src = fileSrc.replace(/ /g, '%20');
+    }
+
+    function showSubPicker() {
+      lbBody.style.display = 'none';
+      lbFrame.src = '';
+      lbSubPicker.classList.add('show');
+      lbBackBtn.classList.remove('show');
+    }
+
+    function openLightbox(card) {
+      lbTitle.textContent = card.dataset.certName;
+      lightbox.classList.add('open');
+      document.body.style.overflow = 'hidden';
+      if (card.dataset.certSubs) {
+        const subArr = JSON.parse(card.dataset.certSubs);
+        lbSubList.innerHTML = subArr.map(s =>
+          `<div class="cert-sub-item" data-file="${s.file}">
+            <i class="fas fa-file-pdf"></i>
+            <span class="cert-sub-item-name">${s.name}</span>
+            <i class="fas fa-chevron-right cert-sub-item-arrow"></i>
+          </div>`
+        ).join('');
+        showSubPicker();
+        lbSubList.querySelectorAll('.cert-sub-item').forEach(item => {
+          item.addEventListener('click', () => {
+            lbBackBtn.classList.add('show');
+            loadPDF(item.dataset.file);
+          });
+        });
+      } else {
+        lbSubPicker.classList.remove('show');
+        lbBackBtn.classList.remove('show');
+        loadPDF(card.dataset.certImg);
+      }
+    }
+
+    function closeLightbox() {
+      lightbox.classList.remove('open');
+      lbFrame.src = '';
+      lbSubPicker.classList.remove('show');
+      lbBackBtn.classList.remove('show');
+      document.body.style.overflow = '';
+    }
+
+    lbBackBtn.addEventListener('click', showSubPicker);
+    document.querySelectorAll('.cert-card').forEach(card => {
+      card.addEventListener('click', () => openLightbox(card));
+    });
+    // ---- MESSAGE POPUP ----
+    const msgTrigger = document.getElementById('msgTrigger');
+    const msgWrap    = msgTrigger ? msgTrigger.closest('.msg-popup-wrap') : null;
+    if (msgTrigger && msgWrap) {
+      msgTrigger.addEventListener('click', e => {
+        e.stopPropagation();
+        msgWrap.classList.toggle('open');
+      });
+      document.addEventListener('click', e => {
+        if (!msgWrap.contains(e.target)) msgWrap.classList.remove('open');
+      });
+    }
+
+    document.getElementById('certLightboxClose').addEventListener('click', closeLightbox);
+    document.getElementById('certOverlay').addEventListener('click', closeLightbox);
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+  </script>
+
+</body>
+</html>
