@@ -1343,8 +1343,12 @@ a, button, .btn, .cert-card, .hamburger, .back-to-top,
 
   /* CONTACT */
   .contact-item { padding: 16px 18px; }
-  .cta-card { padding: 28px 20px; }
+  /* Allow message popup to overflow the card bounds on mobile */
+  .cta-card { padding: 28px 20px; overflow: visible; }
   .msg-options { min-width: 180px; }
+
+  /* SCROLL INDICATOR — hide on mobile since profile card now sits below hero text */
+  .scroll-indicator { display: none; }
 
   /* FOOTER */
   .footer-inner { flex-direction: column; text-align: center; gap: 14px; }
