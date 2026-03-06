@@ -877,6 +877,19 @@ a, button, .btn, .cert-card, .hamburger, .back-to-top,
   .timeline-item:nth-child(even) {
     display: flex;
     flex-direction: column;
+    padding: 0 !important;
+  }
+  /* Reset desktop absolute dot positioning */
+  .timeline-item:nth-child(odd) .timeline-dot,
+  .timeline-item:nth-child(even) .timeline-dot {
+    position: static !important;
+    align-self: flex-start;
+    margin-bottom: 0;
+  }
+  /* Move the centre spine to the left edge */
+  .timeline::before {
+    left: 20px;
+    transform: none;
   }
   .timeline-logo {
     position: static !important;
@@ -1436,19 +1449,20 @@ a, button, .btn, .cert-card, .hamburger, .back-to-top,
   #certLightboxFrame { height: 360px; }
   .cert-lightbox-body { min-height: 360px; }
 
-  /* MESSAGE POPUP — open upward on mobile, high z-index, never clipped */
-  .msg-popup-wrap { position: static; display: flex; justify-content: center; }
+  /* MESSAGE POPUP — drop below button on mobile, never clipped by footer */
+  .msg-popup-wrap { position: relative; display: flex; justify-content: center; }
   .cta-card { overflow: visible; }
   .contact-cta { overflow: visible; }
   .msg-options {
-    position: fixed;
-    bottom: 80px;
+    position: absolute;
+    top: calc(100% + 10px);
+    bottom: auto;
     left: 50%;
-    top: auto;
-    transform: translateX(-50%) translateY(10px);
+    transform: translateX(-50%) translateY(-10px);
     z-index: 5000;
     min-width: 220px;
-    box-shadow: 0 -8px 40px rgba(0,0,0,0.6);
+    width: max-content;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.6);
   }
   .msg-popup-wrap.open .msg-options {
     transform: translateX(-50%) translateY(0);
