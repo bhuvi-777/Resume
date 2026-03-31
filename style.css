@@ -1075,9 +1075,10 @@ a, button, .btn, .cert-card, .hamburger, .back-to-top,
    CONTACT
    ============================================= */
 .contact-grid {
-  display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: stretch;
 }
 .contact-info { display: flex; flex-direction: column; gap: 16px; }
+.contact-cta { display: flex; }
 .contact-item {
   display: flex; align-items: center; gap: 16px;
   background: var(--bg-card); border: 1px solid var(--border);
@@ -1100,6 +1101,8 @@ a, button, .btn, .cert-card, .hamburger, .back-to-top,
   background: var(--bg-card); border: 1px solid var(--border);
   border-radius: var(--radius); padding: 40px; text-align: center;
   position: relative; overflow: hidden;
+  width: 100%;
+  display: flex; flex-direction: column; justify-content: center;
 }
 .cta-glow {
   position: absolute; inset: 0;
