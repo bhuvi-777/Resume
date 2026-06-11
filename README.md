@@ -5,6 +5,10 @@ Electrical & Electronics Engineering Student | Renewable Energy | Automation | R
 ## Portfolio Website
 🌐 Live Website: https://bhuvi-777.github.io/Resume/
 
+## Preview
+
+![Portfolio Preview](assets/images/portfolio-preview.png)
+
 ## About Me
 Passionate Electrical and Electronics Engineering student with experience in:
 
